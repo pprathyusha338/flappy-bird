@@ -5,6 +5,7 @@
 
   <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
   <script>
+    <!-- part 1 for the bird creation and movement -->
   recs=[]
 let ax=50;
 let ay=0;
@@ -25,7 +26,33 @@ function draw() {
   y.move();
     y.show();}
     b.show();
-    }</script>
+    }
+  
+  recs=[]
+let ax=50;
+let ay=0;
+ <!-- part 2 for displaying -->
+function setup() {
+  b=new bird();
+  
+  createCanvas(450,450);
+  for(i=0;i<1000;i++){
+    rec=new obstacle();
+    recs.push(rec);}
+
+}
+function draw() {
+  background("black");
+  for (let y of recs){
+    
+  y.move();
+    y.show();}
+    b.show();
+    }
+  
+  
+  
+  </script>
  
   <style> body { padding: 0; margin: 0; } </style>
 </head>
