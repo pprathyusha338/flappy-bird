@@ -11,20 +11,11 @@ function setup() {
     recs.push(rec);}
 
 }
-
-
 function draw() {
   background("black");
   for (let y of recs){
     
   y.move();
     y.show();}
-    
- 
-
-    
-  
-   b.show();
-    
-
-}
+    b.show();
+    }
